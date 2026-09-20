@@ -12,6 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print greeting
-        run: echo "WAKE UP.  ITS 2:30!"
+        run: echo ${{ toJSON(github) }}
       - name: Print goodbye
         run: echo "Done - bye!"
